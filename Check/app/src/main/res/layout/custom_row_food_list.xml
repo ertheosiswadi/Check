@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="1dp">
+
+    <TextView
+        android:background="@drawable/border_text_view"
+        android:id="@+id/percentageTextView"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="100%"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="1dp"/>
+
+    <TextView
+        android:background="@drawable/border_text_view"
+        android:id="@+id/foodNameTextView"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/percentageTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Spaghetti"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:textColor="#FAE2EC"
+        />
+
+    <ImageView
+        android:padding="5dp"
+        android:id="@+id/editButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+        app:layout_constraintLeft_toRightOf="@id/foodNameTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border_text_view"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:tint="@color/white"
+        android:gravity="center"/>
+
+    <ImageView
+        android:padding="5dp"
+        android:tint="@color/white"
+        android:background="@drawable/border_text_view"
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_remove_circle_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/editButton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="1dp"/>
+
+</android.support.constraint.ConstraintLayout>

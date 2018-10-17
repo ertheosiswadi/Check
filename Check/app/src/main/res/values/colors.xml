@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#23283a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pink">#FE104D</color>
+    <color name="white">#ffffff</color>
+    <color name="darkgray">#6c6c6c</color>
+    <color name="colorPrimaryDrawer">#795548</color>
+    <color name="colorPrimaryDarkDrawer">#5d4037</color>
+    <color name="transparent">#00000000</color>
+</resources>

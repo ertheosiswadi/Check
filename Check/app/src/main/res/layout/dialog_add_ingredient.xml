@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFoodTextView"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="ADD INGREDIENT"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of Ingredient"
+        android:id="@+id/nameOfIngredientEditText_dialog"
+        android:inputType="textPersonName"
+        android:background="@color/transparent"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date (e.g. 05/04/1997)"
+        android:id="@+id/expiryDateEditText_dialog"
+        android:inputType="date"
+        android:background="@color/transparent"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location Stored (e.g. under the sink)"
+        android:id="@+id/locationOfIngredientEditText_dialog"
+        android:inputType="textPersonName"
+        android:background="@color/transparent"
+        />
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="Amount"
+            android:id="@+id/amountOfIngredientEditText_dialog"
+            android:inputType="number"
+            android:background="@color/transparent"
+        />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerUnits_addIngredientDialog"
+            android:prompt="@string/unit"/>
+    </LinearLayout>
+    <CheckBox
+        android:layout_marginTop="15dp"
+        android:id="@+id/inStockCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Stock"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        />
+    <Button
+        android:text="+"
+        android:background="@color/colorAccent"
+        android:id="@+id/addIngredientDialogButton"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

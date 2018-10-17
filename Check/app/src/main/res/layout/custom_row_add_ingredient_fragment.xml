@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:padding="7dp"
+        android:background="@color/white"
+        android:id="@+id/checkImageView"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        android:src="@drawable/ic_check_black_24dp"
+        android:tint="#EFADAB"/>
+
+    <TextView
+        android:id="@+id/ingredientNameAddIngredientFragmentTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:paddingStart="30dp"
+        android:text="Beans"
+        android:textColor="#EFADAB"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/checkImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkImageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="2dp">
+
+    <TextView
+        android:background="@drawable/border_text_view"
+        android:id="@+id/numberTextView_inventoryFragment"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="1."
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="1dp"/>
+
+    <TextView
+        android:background="@drawable/border_text_view"
+        android:id="@+id/ingredientNameTextView_inventoryFragment"
+        android:layout_width="315dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/numberTextView_inventoryFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Spaghetti"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:textColor="#FAE2EC"
+        />
+
+    <ImageView
+        android:padding="8dp"
+        android:id="@+id/editButton_inventoryFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ingredientNameTextView_inventoryFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border_text_view"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:tint="@color/white"
+        android:gravity="center"
+        android:layout_marginRight="1dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
